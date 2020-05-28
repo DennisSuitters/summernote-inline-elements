@@ -1,6 +1,6 @@
 # summernote-inline-elements v0.1
 
-This Plugin adds a Dropdown Summernote toolbar that lets you change add inline HTML Elements.
+This Plugin adds a Dropdown Summernote toolbar that lets you change add inline HTML Elements, and it was dapted from Adapted from [https://github.com/tylerecouture/summernote-add-text-tags](https://github.com/tylerecouture/summernote-add-text-tags)
 
 ### Installation
 
