@@ -1,8 +1,6 @@
-# summernote-paper-size
+# summernote-inline-elements v0.1
 
-This Plugin adds a Paper-Size button to the Summernote toolbar that lets you change the editing view size to reflect Paper Sizes in Portrait format.
-
-![summernote-paper-size](summernote-paper-size.png)
+This Plugin adds a Dropdown Summernote toolbar that lets you change add inline HTML Elements.
 
 ### Installation
 
@@ -11,21 +9,15 @@ This Plugin adds a Paper-Size button to the Summernote toolbar that lets you cha
 Include the following code after Summernote:
 
 ```html
-<script src="summernote-print-size.js"></script>
-<script src="lang/[language-COUNTRY].js"></script>
+<script src="summernote-inline-elements.js"></script>
 ```
 
-#### 2. Supported languages
-
-Supported languages can be found in the `lang` folder, and should be included after the plugin, then setting the chosen language when initialising Summernote.
-
-#### 3. Summernote options
+#### 2. Summernote options
 
 ```javascript
 $('.summernote').summernote({
     toolbar:[
-        ['paperSize',['paperSize']], // The Button
-        ['style',['style']],
+        ['style',['style', 'inline']], // The "Inline" Button
         ['font',['bold','italic','underline','clear']],
         ['fontname',['fontname']],
         ['color',['color']],
@@ -35,10 +27,7 @@ $('.summernote').summernote({
         ['insert',['media','link','hr']],
         ['view',['fullscreen','codeview']],
         ['help',['help']]
-    ],
-    save:{
-      lang: 'en-US' // Change to your chosen language
-    }
+    ]
 });
 ```
 
